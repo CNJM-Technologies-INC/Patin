@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter "Patin" Njenga - Master Florist & Export Consultant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="shortcut icon" href="images/carnations.png" type="image/x-icon">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <!-- P5.js Background Canvas -->
+    <div id="p5-container" class="fixed top-0 left-0 w-full h-full opacity-20 pointer-events-none"></div>
+
+    <!-- Hero Section with Carousel -->
+    <header class="relative min-h-screen flex items-center justify-center text-center px-4">
+        <div class="z-10">
+            <div class="profile-container mb-8">
+                <div class="profile-image-wrapper">
+                    <img src="images/daddy.png" alt="Peter Patin Njenga" class="profile-image">
+                </div>
+            </div>
+            <h1 class="caveat text-6xl md:text-8xl mb-4 text-green-400">Peter "Patin" Njenga</h1>
+            <div class="roles-carousel mb-8">
+                <div class="roles-slide-track">
+                    <div class="role">🌸 Master Florist</div>
+                    <div class="role">📦 Export Specialist</div>
+                    <div class="role">🌾 Flower Farming Consultant</div>
+                    <div class="role">🤝 Professional Flower Broker</div>
+                    <div class="role">📊 Grading Operations Expert</div>                    
+                </div>
+            </div>
+            <p class="text-xl text-gray-400">Cultivating Excellence in Floriculture </p>
+        </div>
+    </header>
+
+    <!-- Expertise Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="caveat text-4xl md:text-5xl text-center mb-12 text-green-400">Areas of Expertise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="expertise-card">
+                <h3 class="expertise-title">International Export</h3>
+                <p class="expertise-description">Specialized in premium flower exports to the Dutch market, ensuring quality preservation during international transit.</p>
+            </div>
+            <div class="expertise-card">
+                <h3 class="expertise-title">Consultation Services</h3>
+                <p class="expertise-description">Professional guidance on flower farming techniques, market analysis, and operational optimization.</p>
+            </div>
+            <div class="expertise-card">
+                <h3 class="expertise-title">Grading & Quality Control</h3>
+                <p class="expertise-description">Expert in international grading standards and quality assurance protocols for export-grade flowers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="caveat text-4xl md:text-5xl text-center mb-12 text-green-400">Premium Collection</h2>
+        <div id="gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Gallery items will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Expert Advice Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="caveat text-4xl md:text-5xl text-center mb-12 text-green-400">Professional Insights</h2>
+        <div id="advice-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Advice cards will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 hidden z-50">
+        <div class="modal-backdrop absolute inset-0 bg-black bg-opacity-75"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="bg-gray-800 rounded-lg max-w-2xl w-full p-6 relative">
+                <button class="absolute top-4 right-4 text-gray-400 hover:text-white" onclick="closeModal()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-16 mt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="caveat text-2xl text-green-400 mb-4">Contact Information</h3>
+                    <p class="mb-2">Phone: <a href="tel:+254723669897" class="hover:text-green-400">+254 723 669 897</a></p>
+                    <p class="mb-2">Location: Nairobi, Kenya</p>
+                    <p>Email: info@patinflorist.com</p>
+                </div>
+                <div>
+                    <h3 class="caveat text-2xl text-green-400 mb-4">Business Hours</h3>
+                    <p class="mb-2">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p class="mb-2">Saturday: 9:00 AM - 5:00 PM</p>
+                    <p>Sunday: By Appointment</p>
+                </div>
+                <div>
+                    <h3 class="caveat text-2xl text-green-400 mb-4">Professional Services</h3>
+                    <ul>
+                        <li class="mb-2">International Flower Export</li>
+                        <li class="mb-2">Farm Consultancy</li>
+                        <li class="mb-2">Flower Brokerage</li>
+                        <li class="mb-2">Quality Grading</li>
+                        <li>Professional Training</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="caveat text-2xl text-green-400 mb-4">Export Markets</h3>
+                    <ul>
+                        <li class="mb-2">Dutch Flower Auction</li>
+                        <li class="mb-2">European Union</li>
+                        <li class="mb-2">Middle East</li>
+                        <li>Local Premium Market</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-12 pt-8 border-t border-gray-700">
+                <p class="mb-4">"Excellence in Every Bloom"</p>
+                <p>&copy; 2025 Peter "Patin" Njenga. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

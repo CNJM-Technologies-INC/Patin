@@ -1,0 +1,127 @@
+.caveat { font-family: 'Caveat', cursive; }
+.modal-backdrop { backdrop-filter: blur(5px); }
+.hover-lift { transition: transform 0.3s ease; }
+.hover-lift:hover { transform: translateY(-5px); }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb { background: #4a5568; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #718096; }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #718096;
+}
+
+/* Profile Image */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    padding: 4px;
+    background: linear-gradient(45deg, #4ade80, #22c55e);
+    /* animation: rotate 10s linear infinite; */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 4px solid #1f2937;
+}
+
+/* Roles Carousel */
+.roles-carousel {
+    overflow: hidden;
+    height: 50px;
+    position: relative;
+}
+
+.roles-slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    flex-direction: column;
+}
+
+.role {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d1d5db;
+    font-size: 1.5rem;
+}
+
+/* Expertise Cards */
+.expertise-card {
+    background: rgba(31, 41, 55, 0.5);
+    border: 1px solid #4ade80;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+}
+
+.expertise-title {
+    font-family: 'Caveat', cursive;
+    color: #4ade80;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.expertise-description {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-250px);
+    }
+}
+
+/* Modal Enhancements */
+.modal-backdrop {
+    backdrop-filter: blur(5px);
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-5px);
+}

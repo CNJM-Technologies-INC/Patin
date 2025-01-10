@@ -1,0 +1,57 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "name": "Premium Roses",
+            "image": "images/roses.png",
+            "description": "Export-grade roses cultivated under optimal conditions for the Dutch market.",
+            "varieties": ["Red Naomi", "Avalanche", "Pink Floyd"],
+            "price": "Ksh250-350 per bunch",
+            "care": "Temperature-controlled storage at 4-6°C, proper hydration essential"
+        },
+        {
+            "id": 2,
+            "name": "Summer Carnations",
+            "image": "images/carnations.png",
+            "description": "Vibrant carnations meeting international export standards.",
+            "varieties": ["Orange Fancy", "Purple Joy", "White Beauty"],
+            "price": "Ksh150-200 per bunch",
+            "care": "Maintain at 2-4°C, regular stem trimming recommended"
+        },
+        {
+            "id": 3,
+            "name": "Premium Lilies",
+            "image": "images/lilies.png",
+            "description": "Exhibition-quality lilies for premium markets.",
+            "varieties": ["Stargazer", "Casa Blanca", "Golden Splendor"],
+            "price": "Ksh30-40 per stem",
+            "care": "Cool storage essential, remove anthers before export"
+        }
+    ],
+    "advice": [
+        {
+            "id": 1,
+            "title": "Export Market Insights",
+            "content": "Success in the Dutch flower market requires understanding auction dynamics and maintaining consistent quality. Focus on stem length uniformity and proper cold chain management.",
+            "category": "Market Knowledge"
+        },
+        {
+            "id": 2,
+            "title": "Quality Control Tips",
+            "content": "Implement rigorous grading standards from harvest to packaging. Monitor temperature logs and conduct regular staff training on handling procedures.",
+            "category": "Operations"
+        },
+        {
+            "id": 3,
+            "title": "Seasonal Planning",
+            "content": "Align production cycles with peak European demand periods. Consider Valentine's Day, Mother's Day, and wedding season demands in your planning.",
+            "category": "Production"
+        },
+        {
+            "id": 4,
+            "title": "Post-Harvest Care",
+            "content": "Maintain strict cold chain protocols from cutting to shipping. Use appropriate preservatives and monitor solution pH levels regularly.",
+            "category": "Technical"
+        }
+    ]
+}
