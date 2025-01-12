@@ -52,6 +52,54 @@
             "title": "Post-Harvest Care",
             "content": "Maintain strict cold chain protocols from cutting to shipping. Use appropriate preservatives and monitor solution pH levels regularly.",
             "category": "Technical"
+        },
+        {
+            "id": 5,
+            "title": "Efficient Packaging",
+            "content": "Use eco-friendly materials for export packaging. Ensure boxes are properly ventilated and labeled for market compliance.",
+            "category": "Logistics"
+        },
+        {
+            "id": 6,
+            "title": "Pest Management",
+            "content": "Adopt integrated pest management strategies to ensure pest-free shipments. Conduct fumigation where necessary.",
+            "category": "Production"
+        },
+        {
+            "id": 7,
+            "title": "Staff Training",
+            "content": "Train your staff on best practices in flower handling, grading, and packing to minimize damage and ensure quality.",
+            "category": "Human Resources"
+        },
+        {
+            "id": 8,
+            "title": "Technology Use",
+            "content": "Invest in modern greenhouse technology for optimal growing conditions and productivity.",
+            "category": "Innovation"
+        },
+        {
+            "id": 9,
+            "title": "Water Management",
+            "content": "Monitor irrigation systems to maintain water efficiency and prevent overwatering, which can impact quality.",
+            "category": "Sustainability"
+        },
+        {
+            "id": 10,
+            "title": "Marketing Strategies",
+            "content": "Develop a strong online presence to reach international buyers directly, reducing dependency on intermediaries.",
+            "category": "Marketing"
+        },
+        {
+            "id": 11,
+            "title": "Compliance Standards",
+            "content": "Ensure adherence to international export standards and certifications, such as MPS and GlobalG.A.P.",
+            "category": "Regulations"
+        },
+        {
+            "id": 12,
+            "title": "Innovative Breeding",
+            "content": "Experiment with new flower varieties to capture niche markets and stay ahead of trends.",
+            "category": "Research"
         }
     ]
 }

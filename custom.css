@@ -192,3 +192,22 @@
 .hover-lift:hover {
     transform: translateY(-5px);
 }
+/* Add these styles to your CSS */
+.pagination-btn {
+    background-color: #fc7304;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not([disabled]) {
+    background-color: #ffa908;
+    transform: translateY(-2px);
+}
+
+.pagination-btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
