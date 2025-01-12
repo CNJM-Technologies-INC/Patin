@@ -123,3 +123,21 @@ document.querySelector('.roles-carousel').addEventListener('animationend', funct
     void this.offsetWidth; // Trigger reflow
     this.style.animation = null;
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollBtn = document.getElementById('scroll-top-btn');
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollBtn.classList.add('visible');
+        } else {
+            scrollBtn.classList.remove('visible');
+        }
+    });
+
+    scrollBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
